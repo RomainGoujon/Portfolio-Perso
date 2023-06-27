@@ -407,6 +407,7 @@ section {
 .bar {
     font-size: 20px;
 }
+
 @media screen and (max-width:600px) {
     .skills .progressbar {
         color: rgb(91, 107, 120);
@@ -428,7 +429,14 @@ section {
 }
 
 .portfolio p {
-    font-size: 1.7rem;
+    font-size: 16px;
+}
+
+@media screen and (min-width:750px) {
+
+    .portfolio p {
+        font-size: 1.7rem;
+    }
 }
 
 .portfolio .grid_item.hide {
