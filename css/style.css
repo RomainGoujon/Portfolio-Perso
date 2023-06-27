@@ -28,16 +28,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, .h1 {
-    font-size: 3.1rem;
+    font-size: 2.6rem;
 }
 
 h2, .h2 {
-    font-size: 2.8rem;
+    font-size: 2rem;
     text-transform: uppercase;
 }
 
+@media screen and (max-width:549px) {
+    .title_skills {
+        word-break: break-all;
+        hyphens: auto;
+    } 
+}
+
 h3, .h3 {
-    font-size: 2.1rem;
+    font-size: 1.6rem;
 }
 
 a {
@@ -288,7 +295,7 @@ section {
 
 .home .title {
     color: inherit;
-    font-size: 4rem;
+    font-size: 3.1rem;
     margin: 1.6rem 0 0 0;
     font-weight: 700;
 }
@@ -377,6 +384,13 @@ section {
     font-size: 16px;
 }
 
+@media screen and (min-width:750px) {
+
+    .skills p {
+        font-size: 1.7rem;
+    }
+}
+
 .skills li {
     background-color: #F5F5F5;
     border-left: 3px solid rgb(91, 107, 120);
@@ -385,9 +399,18 @@ section {
 
 .skills .progressbar {
     background: #ffffff;
-    color: #FFF;
+    color: #ffffff;
     margin-bottom: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bar {
+    font-size: 20px;
+}
+@media screen and (max-width:600px) {
+    .skills .progressbar {
+        color: rgb(91, 107, 120);
+    }
 }
 
 .skills .bar {
@@ -402,6 +425,10 @@ section {
     margin-bottom: 0;
     opacity: 1;
     transition: all 1s ease;
+}
+
+.portfolio p {
+    font-size: 1.7rem;
 }
 
 .portfolio .grid_item.hide {
@@ -426,6 +453,15 @@ section {
     padding: 1rem;
 }
 
+ul.grid.portfolio-filters.list-unstyled li a {
+    font-size: 16px;
+}
+
+@media screen and (min-width:750px) {
+    ul.grid.portfolio-filters.list-unstyled li a {
+        font-size: 1.7rem;
+    }
+}
 .portfolio-filters a.active {
     color: #FFF;
     background: #70a883;
@@ -457,14 +493,17 @@ section {
 }
 
 .card_inner {
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .card_title {
-    margin: 0 0 1rem;
-    font-size: 1.6rem;
+    margin: 0;
+    font-size: 1rem;
 }
 
+.card_inner p {
+    font-size: 16px;
+}
 .card_overlay {
     background: rgba(0, 0, 0, 0.8);
     position: absolute;
@@ -492,6 +531,20 @@ section {
 
 /* Css pour le contact */
 
+.contact {
+    background: #F5F5F5;
+}
+
+.contact p {
+    font-size: 16px;
+}
+
+@media screen and (min-width:750px) {
+    .contact p {
+        font-size: 1.7rem;
+    }
+}
+
 .form {
     max-width: 600px;
     margin: 4rem auto 0 auto;
@@ -514,8 +567,8 @@ section {
     background: var(--color-body);
     color: #FFF;
     width: auto;
-    min-width: 160px;
-    font-size: 2rem;
+    min-width: 150px;
+    font-size: 1rem;
     text-transform: uppercase;
 }
 
