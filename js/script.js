@@ -5,11 +5,13 @@ function menuMobile() {
 
   btn.addEventListener('click', () => {
     header.classList.toggle('show-nav');
+    btn.classList.toggle('active');
   });
 
   links.forEach(link => {
     link.addEventListener('click', () => {
       header.classList.remove('show-nav');
+      btn.classList.remove('active');
     });
   });
 }
