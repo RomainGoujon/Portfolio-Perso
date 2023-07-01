@@ -207,6 +207,7 @@ section {
     cursor: pointer;
     position: relative;
     margin-left: 1rem;
+    z-index: 1;
 }
 
 .burger .bar {
