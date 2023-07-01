@@ -247,7 +247,7 @@ section {
         width: 0;
         overflow: hidden;
         opacity: 0;
-        height: calc(100vh - 55px);
+        height: calc(100vh);
         background: #F5F5F5;
         transition: all .4s ease-out;
     }
